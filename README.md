@@ -83,17 +83,11 @@ Example flows (short):
   * choose `9`, `In:` `cidrs.txt`, `Out:` `ranges.txt`
 
 
-## Cargo profile / Makefile (optional)
+## Cargo profile
 
-Simple `Makefile` snippet:
-
-```makefile
-.PHONY: build run
-
-build:
+```
 	cargo build --release
 
-run: build
 	./multiverse
 ```
 

@@ -22,16 +22,16 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 ```
 
-2. Clone this repo
+2. Clone repo
 
 ```bash
-git clone <repo-url>
-cd <repo-dir>
+git clone https://github.com/BharatCyberForce/multiverse
+cd multiverse
 ```
 
 3. `Cargo.toml`
 
-Add these deps under `[dependencies]` (already included if you forked):
+Add these deps under `[dependencies]`
 
 ```toml
 regex = "1"
@@ -46,11 +46,11 @@ reqwest = { version = "0.11", features = ["blocking", "json"] }
 cargo build --release
 ```
 
-Binary: `target/release/multiverse` (or the crate name you choose)
+Binary: `target/release/multiverse`
 
 ## Usage
 
-Run the binary, use the menu (short prompts):
+Run the binary:
 
 ```bash
 ./multiverse
@@ -90,7 +90,3 @@ Example flows (short):
 
 	./multiverse
 ```
-
-## License
-
-MIT
